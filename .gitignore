@@ -1,0 +1,3 @@
+data/census/blocks/**
+data/census/urban_areas/tl_2010_us_uac10.*
+!data/census/urban_areas/tl_2010_us_uac10.zip
