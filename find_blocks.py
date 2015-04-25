@@ -26,7 +26,7 @@ with open (sys.argv[1], "r") as myfile:
 # supply path to where is your qgis installed
 if sys.platform == "darwin":
   QgsApplication.setPrefixPath("/Applications/QGIS.app/Contents/MacOS", True)
-else if sys.platform == "linux2":
+elif sys.platform == "linux2":
   QgsApplication.setPrefixPath("/usr", True)
 
 # load providers
