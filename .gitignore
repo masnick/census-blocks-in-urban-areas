@@ -2,3 +2,5 @@ data/census/blocks/**
 !data/census/blocks/.gitkeep
 data/census/urban_areas/tl_2010_us_uac10.*
 !data/census/urban_areas/tl_2010_us_uac10.zip
+data/census/block_population/**
+!data/census/block_population/.gitkeep
