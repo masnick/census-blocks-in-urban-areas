@@ -24,7 +24,10 @@ with open (sys.argv[1], "r") as myfile:
   to_process = [int(float(i)) for i in myfile.readlines()]
 
 # supply path to where is your qgis installed
-QgsApplication.setPrefixPath("/Applications/QGIS.app/Contents/MacOS", True)
+if sys.platform == "darwin":
+  QgsApplication.setPrefixPath("/Applications/QGIS.app/Contents/MacOS", True)
+else if sys.platform == "linux2":
+  QgsApplication.setPrefixPath("/usr", True)
 
 # load providers
 QgsApplication.initQgis()

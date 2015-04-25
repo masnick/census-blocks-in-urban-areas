@@ -15,7 +15,7 @@
 5. Run 
 
     sudo apt-get update
-    sudo apt-get install qgis python-qgis qgis-plugin-grass
+    sudo apt-get install qgis python-qgis qgis-plugin-grass git-core python-setuptools build-essential checkinstall python-pandas unzip
 
 6. Add to `~/.bashrc`:
 
@@ -27,3 +27,7 @@
     cat ~/.ssh/id_rsa.pub
 
     # Add as deploy key on Github
+
+8. Clone script
+
+    git clone git@github.com:masnick/census-blocks-in-urban-areas.git ~/census
