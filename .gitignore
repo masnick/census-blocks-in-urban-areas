@@ -4,3 +4,6 @@ data/census/urban_areas/tl_2010_us_uac10.*
 !data/census/urban_areas/tl_2010_us_uac10.zip
 data/census/block_population/**
 !data/census/block_population/.gitkeep
+data/nhgis/**
+!data/nhgis/.gitkeep
+
