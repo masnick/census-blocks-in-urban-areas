@@ -25,6 +25,7 @@ with con:
   onlyfiles = [ f for f in os.listdir(path) if os.path.isfile(os.path.join(path,f)) and re.match(r'.*csv$',f)]
 
   for file in onlyfiles:
+    print "Starting %s" % file
     # Read in CSV file for editing
     csv = pd.read_csv(os.path.join(path,file), quotechar='"')
 
