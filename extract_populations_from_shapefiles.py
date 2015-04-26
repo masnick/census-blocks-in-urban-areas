@@ -32,7 +32,7 @@ output_df = pd.DataFrame(columns=columns)
 for st in valid_states:
 
   # Get filename
-  filename = "tabblock2010_%s_pophu" % st
+  filename = "tabblock2010_%02d_pophu" % st
 
   # Check to see if shapefile has been downloaded
   # If not, download it
