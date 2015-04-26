@@ -48,7 +48,9 @@ for st in valid_states:
   # Extract attributes
   field_names = [field.name() for field in blocks_in_state_layer.pendingFields() ]
 
+  block_count = 0
   for block in blocks_in_state_layer.getFeatures():
+    block_count += 1
     block_attributes =  dict(zip(field_names, block.attributes()))
     data = [{
       'state': block_attributes['STATEFP10'],
@@ -61,7 +63,10 @@ for st in valid_states:
     }]
     output_df = output_df.append(data)
 
-output_df.to_csv("data/census/output/block_population.csv", index = False)
+    if block_count % 1000 == 0:
+      print "Processing block %s in %s" % (block_count, st)
+
+  output_df.to_csv("data/census/output/block_population_%s.csv" % st, index = False)
 
 # cleanup
 QgsApplication.exitQgis()
