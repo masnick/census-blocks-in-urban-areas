@@ -6,4 +6,6 @@ data/census/block_population/**
 !data/census/block_population/.gitkeep
 data/nhgis/**
 !data/nhgis/.gitkeep
+data/census/blocks_with_population.csv
+data/census/blocks_with_population.dta
 
